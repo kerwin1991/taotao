@@ -20,5 +20,18 @@
     </modules>
     <packaging>pom</packaging>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <!-- http://127.0.0.1:${port}/${path} -->
+                    <port>80</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
